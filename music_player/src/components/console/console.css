@@ -1,0 +1,53 @@
+.console{
+  display: flex;
+  flex-direction: row;
+  width:auto;
+  background-color:#333;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  border: solid black 5px;
+  border-right: none;
+  height: auto;
+  flex-wrap: wrap;
+  color:antiquewhite;
+  min-width:400px;
+
+}
+
+.sliderRange{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size:20px;
+  width:300px;
+}
+
+.sliderContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  align-content: center;  
+
+}
+
+@media all and (max-width: 500px) {
+  .closed {
+    opacity: 0;
+    max-height: 0px;
+    cursor: default;
+    transition: opacity 0.01s linear, max-height 0.01s ease-in;
+    -moz-transition: opacity 0.25s linear, max-height 0.25s ease-in;
+  }
+
+
+  .console{
+    justify-content: center;
+    align-items: center;
+    border-right:solid black 5px;
+    border-left:solid black 5px;
+    width:stretch;
+  }
+
+}

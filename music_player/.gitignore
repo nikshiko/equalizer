@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log*
+build
+coverage
+.vscode
+.DS_Store

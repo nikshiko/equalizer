@@ -1,0 +1,93 @@
+.buttonDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.preset{
+  border: solid black 5px;
+  border-left:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width:150px;
+  background-color:#404040;
+  flex-direction: column;
+  height: auto;
+} 
+
+.presetButton{
+  background-color:black;
+  outline: none;
+  height:50px;
+  border: solid gray 1px;;
+  width:100px;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.selectOptions{
+  display: flex;
+  flex-direction: column;
+  width:100px;
+  border: solid gray 1px;
+  max-height: 200px;
+  transition: opacity 1s ease-out, max-height 1s ease-out;
+  -moz-transition: opacity 1s ease-out, max-height 1s ease-out;
+  cursor: pointer;
+}
+
+.closed {
+  opacity: 0;
+  max-height: 0px;
+  cursor: default;
+  transition: opacity 0.25s linear, max-height 0.25s ease-in;
+  -moz-transition: opacity 0.25s linear, max-height 0.25s ease-in;
+}
+
+
+.optionDiv{
+  padding:5%;
+  background-color:black; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectedOption{
+  padding:5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#333;
+  border:solid #333 1px;
+}
+
+
+
+@media all and (max-width: 500px){
+  .buttonDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  .preset{
+    border-left:solid black 5px;
+    border-top:none;
+    width:stretch;
+    height: 200px;
+  }
+  
+  .presetButton{
+    height:58px;
+  }
+}
